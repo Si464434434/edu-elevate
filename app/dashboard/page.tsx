@@ -137,7 +137,7 @@ export default function DashboardHome() {
         {/* Main Features Grid */}
         <section className="mb-16">
           <h2 className="text-4xl font-extrabold text-gray-900 mb-10">🚀 Quick Access</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             <Link href="/dashboard/opportunities" className="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 border border-gray-100 overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="relative">
@@ -179,6 +179,17 @@ export default function DashboardHome() {
                 <p className="text-sm text-gray-600 leading-relaxed mb-4">Get guidance from experts</p>
                 <div className="flex items-center text-green-600 font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   Connect Now <span className="ml-2">→</span>
+                </div>
+              </div>
+            </Link>
+            <Link href="/dashboard/hostels" className="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 border border-gray-100 overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-red-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative">
+                <div className="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300">🏠</div>
+                <h3 className="text-xl font-bold text-gray-900 group-hover:text-orange-600 transition-colors mb-3">Find Hostels</h3>
+                <p className="text-sm text-gray-600 leading-relaxed mb-4">Book hostels & find roommates</p>
+                <div className="flex items-center text-orange-600 font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Explore Now <span className="ml-2">→</span>
                 </div>
               </div>
             </Link>
