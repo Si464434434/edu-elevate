@@ -59,7 +59,14 @@ export default function Home() {
             </div>
             <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">EduElevate</span>
           </div>
-          <div className="hidden md:flex items-center gap-10">
+          MONGODB_URI
+          mongodb+srv://sarthakkhareo88_db_user:CFLBQPa8WFfGqqgf@cluster0.zugm5ms.mongodb.net/edu-elevate?retryWrites=true&w=majority&appName=Cluster0
+          
+          JWT_SECRET
+          jwt-super-secret-key-67890
+          
+          NEXTAUTH_SECRET
+          edu-elevate-secret-2026-12345          <div className="hidden md:flex items-center gap-10">
             <a href="#features" className="text-gray-700 hover:text-blue-600 font-medium transition-colors relative group">
               Features
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
@@ -256,7 +263,7 @@ export default function Home() {
             {testimonials.map((testimonial, idx) => (
               <div key={idx} className="group relative bg-white rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3">
                 <div className="absolute -top-6 -left-6 w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-lg">
-                  "
+                  &quot;
                 </div>
                 <p className="text-gray-700 text-lg leading-relaxed mb-6 italic">{testimonial.text}</p>
                 <div className="flex items-center gap-1 mb-4">
