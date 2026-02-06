@@ -68,6 +68,11 @@ export default function RegisterPage() {
             <p className="text-gray-600 text-lg">Join 45K+ students already finding amazing opportunities</p>
           </div>
 
+          {/* Human touch message */}
+          <div className="mb-6 p-3 bg-green-50 rounded-lg border border-green-200 text-xs text-green-700">
+            🎯 Real talk: Complete your profile fully. It actually gets you more opportunities.
+          </div>
+
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
               <label className="block text-sm font-bold text-gray-700 mb-3">

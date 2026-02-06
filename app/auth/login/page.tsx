@@ -66,6 +66,11 @@ export default function LoginPage() {
             <p className="text-gray-600 text-lg">Good to see you again. Let&apos;s find you something amazing.</p>
           </div>
 
+          {/* Easter egg message */}
+          <div className="mb-6 p-3 bg-blue-50 rounded-lg border border-blue-200 text-xs text-blue-700">
+            💡 Pro tip: Check your applications daily. Best opportunities go fast.
+          </div>
+
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label className="block text-sm font-bold text-gray-700 mb-3">
