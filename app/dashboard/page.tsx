@@ -80,9 +80,9 @@ export default function DashboardHome() {
           <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse delay-1000"></div>
           <div className="relative">
             <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-4">
-              Welcome back, <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600">{user?.name}!</span> 👋
+              Yo <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600">{user?.name}</span>, welcome back! 👋
             </h1>
-            <p className="text-xl text-gray-600">Track opportunities, build your career, and achieve your dreams.</p>
+            <p className="text-xl text-gray-600">Time to find something amazing. Let&apos;s go.</p>
           </div>
         </section>
 

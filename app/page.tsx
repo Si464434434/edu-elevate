@@ -12,40 +12,69 @@ export default function Home() {
 
   const testimonials = [
     {
-      text: "Got my dream internship at Google thanks to EduElevate!",
-      author: "Aditya, Mumbai"
+      text: "Was applying to internships blind for months. EduElevate showed me I was doing it all wrong. Now I actually get callbacks! 🎉",
+      author: "Aditya, Mumbai",
+      role: "2nd Year, IIT Delhi",
+      achievement: "Got Google internship"
     },
     {
-      text: "Resume builder helped me land 3 interview calls.",
-      author: "Priya, Bangalore"
+      text: "I literally just changed a few things in my resume using the builder and suddenly started getting interview calls. This is insane.",
+      author: "Priya, Bangalore",
+      role: "Final Year, BITS",
+      achievement: "3 interview calls in 1 week"
     },
     {
-      text: "Mentor guidance was game-changing for my profile.",
-      author: "Rohit, Delhi"
+      text: "The mentor I connected with actually helped me figure out what I was doing wrong. No BS, just real feedback. Changed everything.",
+      author: "Rohit, Delhi",
+      role: "3rd Year, DU",
+      achievement: "Accepted scholarship offer"
+    },
+    {
+      text: "I was broke and needed a hostel. Found this place, met amazing roommates through the feature. Best decision ever.",
+      author: "Neha, Pune",
+      role: "1st Year, PUNE University",
+      achievement: "Saved ₹20k annually"
+    },
+    {
+      text: "Honestly didn't expect this to actually work. But it did. Applied to 15 opportunities, got 7 interviews. Life-changing.",
+      author: "Arjun, Hyderabad",
+      role: "Final Year, IIIT",
+      achievement: "Multiple offers"
+    },
+    {
+      text: "As someone who had no idea what I was doing, this platform literally hand-held me through the entire process. Grateful af.",
+      author: "Zara, Gurgaon",
+      role: "2nd Year, Delhi",
+      achievement: "Confidence + clarity"
     }
   ];
 
   const features = [
     {
       icon: "🔍",
-      title: "100% Verified Opportunities",
-      desc: "No spam. Real internships, scholarships & hackathons."
+      title: "Actually Verified Opportunities",
+      desc: "No spam. We check everything ourselves. Real internships, scholarships & hackathons from companies that actually exist."
     },
     {
       icon: "📄",
-      title: "Smart Resume Builder",
-      desc: "Build ATS-friendly resumes in minutes."
+      title: "Stop Struggling With Resume",
+      desc: "Your resume probably looks like AI made it. Ours fix that + passes ATS filters. Make something that actually gets you calls."
     },
     {
       icon: "👨‍🏫",
-      title: "Expert Mentors",
-      desc: "Get guidance from industry professionals."
+      title: "Real Mentors, Real Talk",
+      desc: "Connect with people who've actually done it. Get advice that matters, not generic motivational BS."
     },
     {
       icon: "✅",
-      title: "Application Tracker",
-      desc: "Track all your applications in one place."
-    }
+      title: "Track Everything Here",
+      desc: "Stop texting yourself reminders. See all your applications, deadlines, and statuses in one place."
+    },
+    {
+      icon: "🏠",
+      title: "Find Your People",
+      desc: "Good hostel nearby? Cool roommates? We got you. Save money, find community."
+    },
   ];
 
   return (
@@ -92,22 +121,21 @@ export default function Home() {
         <div className="absolute top-40 right-10 w-72 h-72 bg-indigo-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse delay-1000"></div>
         
         <div className="max-w-7xl mx-auto text-center relative z-10">
-          <div className="inline-block mb-6 px-4 py-2 bg-blue-100 rounded-full text-blue-700 font-semibold text-sm animate-bounce">
-            🎉 Join 45,000+ Students Already Growing!
+          <div className="inline-block mb-6 px-4 py-2 bg-blue-100 rounded-full text-blue-700 font-semibold text-sm">
+            🚀 45K students already here, why are you still scrolling?
           </div>
           
           <h1 className="text-6xl md:text-7xl font-extrabold text-gray-900 mb-8 leading-tight">
-            Unlock Your{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 animate-gradient">
-              Dream Career
+            Stop applying <br/>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600">
+              blindly
             </span>
-            <br />
-            <span className="text-5xl md:text-6xl">Start Today!</span>
+            . <br/>
+            We got your back.
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
-            Discover <strong>100% verified</strong> internships, scholarships & competitions. 
-            Build resumes, track applications, connect with mentors — <span className="text-blue-600 font-semibold">all for FREE!</span>
+            Real internships, real scholarships, real mentors. No spam. No BS. Just students like you, actually getting results. We built this because we were tired of searching too.
           </p>
 
           {/* Search Bar */}
@@ -245,27 +273,30 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 px-6 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50">
+      <section className="py-24 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="text-5xl font-extrabold text-gray-900 mb-6">
-              ⭐ Success Stories
+              💬 What Real Students Are Saying
             </h2>
-            <p className="text-xl text-gray-600">Join thousands of students who achieved their dreams</p>
+            <p className="text-xl text-gray-600">Not paid testimonials. Just real results.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, idx) => (
-              <div key={idx} className="group relative bg-white rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3">
-                <div className="absolute -top-6 -left-6 w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-lg">
-                  &quot;
-                </div>
-                <p className="text-gray-700 text-lg leading-relaxed mb-6 italic">{testimonial.text}</p>
-                <div className="flex items-center gap-1 mb-4">
+              <div key={idx} className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-blue-300">
+                <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-yellow-400 text-xl">★</span>
+                    <span key={i} className="text-yellow-400 text-lg">★</span>
                   ))}
                 </div>
-                <p className="font-bold text-gray-900 text-lg">{testimonial.author}</p>
+                <p className="text-gray-700 text-base leading-relaxed mb-6 italic font-medium">&quot;{testimonial.text}&quot;</p>
+                <div className="border-t border-gray-200 pt-4">
+                  <p className="font-bold text-gray-900">{testimonial.author}</p>
+                  <p className="text-sm text-gray-600 mb-2">{testimonial.role}</p>
+                  <p className="text-sm font-semibold text-blue-600 bg-blue-50 inline-block px-3 py-1 rounded-full">
+                    ✨ {testimonial.achievement}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
@@ -377,14 +408,15 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <p className="text-gray-400">© 2026 EduElevate. All rights reserved. Made with ❤️ for Indian Students.</p>
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+              <p className="text-gray-400">Made by a team of broke students who wanted a better way. Now helping 45K+ others do the same.</p>
               <div className="flex gap-6 text-gray-400 text-sm">
                 <a href="#" className="hover:text-white transition-colors">Privacy</a>
                 <a href="#" className="hover:text-white transition-colors">Terms</a>
-                <a href="#" className="hover:text-white transition-colors">Cookies</a>
+                <a href="#" className="hover:text-white transition-colors">Hit us up</a>
               </div>
             </div>
+            <p className="text-center text-gray-500 text-sm mt-6">We're not backed by any VC. We're just students helping students. 🎓</p>
           </div>
         </div>
       </footer>

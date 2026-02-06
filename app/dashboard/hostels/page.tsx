@@ -138,7 +138,7 @@ export default function HostelFinder() {
                       </span>
                       <span className="flex items-center gap-1">
                         {'⭐'.repeat(Math.round(hostel.rating))}
-                        <span className="text-sm text-gray-600">({hostel.reviews.length})</span>
+                        <span className="text-sm text-gray-600">({hostel.reviews?.length || 0})</span>
                       </span>
                     </div>
 
@@ -187,7 +187,7 @@ export default function HostelFinder() {
                     <p className="text-sm text-gray-600">Rating</p>
                     <div className="flex items-center gap-2">
                       <div>{'⭐'.repeat(Math.round(selectedHostel.rating))}</div>
-                      <span className="text-sm text-gray-600">({selectedHostel.reviews.length} reviews)</span>
+                      <span className="text-sm text-gray-600">({selectedHostel.reviews?.length || 0} reviews)</span>
                     </div>
                   </div>
 

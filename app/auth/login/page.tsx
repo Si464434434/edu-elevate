@@ -61,9 +61,9 @@ export default function LoginPage() {
               </div>
             </Link>
             <h1 className="text-4xl font-extrabold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-3">
-              Welcome Back!
+              Welcome back!
             </h1>
-            <p className="text-gray-600 text-lg">Login to continue your journey</p>
+            <p className="text-gray-600 text-lg">Good to see you again. Let&apos;s find you something amazing.</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">

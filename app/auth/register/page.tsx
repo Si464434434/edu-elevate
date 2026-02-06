@@ -63,9 +63,9 @@ export default function RegisterPage() {
               </div>
             </Link>
             <h1 className="text-4xl font-extrabold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-3">
-              Join EduElevate
+              Let&apos;s get you started
             </h1>
-            <p className="text-gray-600 text-lg">Start your career journey today!</p>
+            <p className="text-gray-600 text-lg">Join 45K+ students already finding amazing opportunities</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-5">
